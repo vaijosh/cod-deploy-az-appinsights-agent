@@ -8,8 +8,8 @@ ssh access to all Hbase hosts
 ## How to setup up application insights agent
 1. Create an Application Insights Workspace and note down the conncetions
 2. Modify applicationinsights.json and copy "Connection String" recorded in step 2. Also in jmxMetrics section include the JMX metrics you want to monitor.
-3. modify the hosts file and add the hosts grouped as per roles e.g. [master], [regionserver]
-4. run the ansible script using command
+3. Modify the hosts file and add the hosts grouped by role names e.g. [master], [regionserver].<br />( Note: The same group name will appear as role name in metric and hostname will be used role instance )
+4. Run the ansible script using command
 
     ```export ANSIBLE_HOST_KEY_CHECKING=False```
     

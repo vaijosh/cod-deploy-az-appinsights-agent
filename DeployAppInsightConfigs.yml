@@ -1,0 +1,29 @@
+- name: Creates directory
+  file:
+    path: /var/lib/hbase/appinsights/{{ROLE_NAME}}
+    state: directory
+    owner: hbase
+    group: hbase
+    mode: 0775
+- name: Download application insights jar file
+  get_url:
+    url: https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.4/applicationinsights-agent-3.4.4.jar
+    dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}
+    mode: 0755
+    owner: hbase
+- name: Copy Configuration file
+  copy:
+    src: applicationinsights.json
+    dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}
+    mode: 755
+    owner: hbase
+- name: Replace ROLENANME in config file
+  replace:
+    path: /var/lib/hbase/appinsights/{{ROLE_NAME}}/applicationinsights.json
+    regexp: 'ROLENAME'
+    replace: '{{ROLE_NAME}}'
+- name: Replace HOSTNAME in config file
+  replace:
+    path: /var/lib/hbase/appinsights/{{ROLE_NAME}}/applicationinsights.json
+    regexp: 'HOSTNAME'
+    replace: '{{ ansible_hostname }}'

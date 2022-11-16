@@ -1,0 +1,61 @@
+{
+  "role": {
+    "name": "ROLENAME",
+    "instance": "HOSTNAME"
+  },
+  "connectionString": "",
+  "instrumentation": {
+    "azureSdk": {
+      "enabled": false
+    },
+    "cassandra": {
+      "enabled": false
+    },
+    "jdbc": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
+    "kafka": {
+      "enabled": false
+    },
+    "micrometer": {
+      "enabled": false
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "quartz": {
+      "enabled": false
+    },
+    "rabbitmq": {
+      "enabled": false
+    },
+    "redis": {
+      "enabled": false
+    },
+    "springScheduling": {
+      "enabled": false
+    }
+  },
+  "jmxMetrics": [
+    {
+      "name": "Number of Dead Region Servers",
+      "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+      "attribute": "numDeadRegionServers"
+    },
+    {
+      "name": "Number of Region Servers",
+      "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+      "attribute": "numRegionServers"
+    },
+    {
+      "name": "Number of Draining Region Servers",
+      "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+      "attribute": "numDrainingRegionServers"
+    }    
+  ]
+}
+
+

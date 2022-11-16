@@ -1,0 +1,10 @@
+[master]
+cod-i5cpp350ewhg-master0.cod-7216.xcu2-8y8x.dev.cldr.work
+cod-i5cpp350ewhg-master1.cod-7216.xcu2-8y8x.dev.cldr.work
+
+[regionserver]
+cod-i5cpp350ewhg-worker0.cod-7216.xcu2-8y8x.dev.cldr.work
+cod-i5cpp350ewhg-worker1.cod-7216.xcu2-8y8x.dev.cldr.work
+cod-i5cpp350ewhg-worker2.cod-7216.xcu2-8y8x.dev.cldr.work
+cod-i5cpp350ewhg-worker3.cod-7216.xcu2-8y8x.dev.cldr.work
+cod-i5cpp350ewhg-worker4.cod-7216.xcu2-8y8x.dev.cldr.work
