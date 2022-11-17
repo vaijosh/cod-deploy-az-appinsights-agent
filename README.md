@@ -31,7 +31,8 @@ ssh access to all Hbase hosts
 2. Click on Create an alert rule
 3. Select Custom log search, which should open KQL query editor
 4. add followng query to filter metrics
-    ```customMetrics
+    ```
+      customMetrics
         | where cloud_RoleInstance == "<role instance>" and name == '<metric name>'
     ```
 5. In preview panel you can see the search results for the query. Once the results are validated, click "Continue Editing Alert"

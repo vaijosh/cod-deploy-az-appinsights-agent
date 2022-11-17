@@ -1,0 +1,9 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: Delete appinsights directory
+      file:
+        state: absent
+        path: /var/lib/hbase/appinsights
+  become: true
+  become_method: sudo

@@ -1,10 +1,10 @@
 - hosts: all
+  gather_facts: no
   tasks:
     - name: Deploy Ansible files
       include_tasks: DeployAppInsightConfigs.yml
       vars:
         ROLE_NAME: "{{ item }}"
       with_items: "{{ group_names }}"
-
   become: true
   become_method: sudo
