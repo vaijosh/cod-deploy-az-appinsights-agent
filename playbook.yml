@@ -1,4 +1,5 @@
 - hosts: all
+  gather_facts: no
   tasks:
     - name: Deploy Ansible files
       include_tasks: DeployAppInsightConfigs.yml

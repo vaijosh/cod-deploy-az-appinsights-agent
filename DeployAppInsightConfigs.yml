@@ -26,4 +26,4 @@
   replace:
     path: /var/lib/hbase/appinsights/{{ROLE_NAME}}/applicationinsights.json
     regexp: 'HOSTNAME'
-    replace: '{{ ansible_hostname }}'
+    replace: '{{ inventory_hostname_short }}'
