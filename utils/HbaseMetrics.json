@@ -1,0 +1,1112 @@
+[{
+   "name": "Hadoop:service=HBase,name=MetricsSystem,sub=Stats",
+   "description": "Metrics system metrics",
+   "modelerType": "MetricsSystem,sub=Stats",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "metricssystem"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "NumActiveSources": {
+      "description": "Number of active metrics sources",
+      "value": 7
+   },
+   "NumAllSources": {
+      "description": "Number of all registered metrics sources",
+      "value": 7
+   },
+   "NumActiveSinks": {
+      "description": "Number of active metrics sinks",
+      "value": 0
+   },
+   "NumAllSinks": {
+      "description": "Number of all registered metrics sinks",
+      "value": 0
+   },
+   "SnapshotNumOps": {
+      "description": "Number of ops for snapshot stats",
+      "value": 0
+   },
+   "SnapshotAvgTime": {
+      "description": "Average time for snapshot stats",
+      "value": 0.0
+   },
+   "PublishNumOps": {
+      "description": "Number of ops for publishing stats",
+      "value": 0
+   },
+   "PublishAvgTime": {
+      "description": "Average time for publishing stats",
+      "value": 0.0
+   },
+   "DroppedPubAll": {
+      "description": "Dropped updates by all sinks",
+      "value": 0
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+   "description": "Metrics about FileSystem IO",
+   "modelerType": "RegionServer,sub=IO",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "regionserver"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "fsChecksumFailureCount": {
+      "description": "Number of checksum failures for the HBase HFile checksums at the HBase level (separate from HDFS checksums)",
+      "value": 0
+   },
+   "FsPReadTime_num_ops": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_min": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_max": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_mean": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_25th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_median": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_75th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_90th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_95th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_98th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_99th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsPReadTime_99.9th_percentile": {
+      "description": "latency of HFile's positional reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_num_ops": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_min": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_max": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_mean": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_25th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_median": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_75th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_90th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_95th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_98th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_99th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsWriteTime_99.9th_percentile": {
+      "description": "latency of HFile's writes on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_num_ops": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_min": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_max": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_mean": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_25th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_median": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_75th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_90th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_95th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_98th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_99th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   },
+   "FsReadTime_99.9th_percentile": {
+      "description": "latency of HFile's sequential reads on this region server in milliseconds",
+      "value": 0
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=Master,sub=Quotas",
+   "description": "Metrics about HBase Quotas by the Master",
+   "modelerType": "Master,sub=Quotas",
+   "tag.tableSpaceQuotaOverview": {
+      "description": "A JSON summary of the usage of all tables with space quotas",
+      "value": "[]"
+   },
+   "tag.namespaceSpaceQuotaOverview": {
+      "description": "A JSON summary of the usage of all namespaces with space quotas",
+      "value": "[]"
+   },
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "master"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "numTablesInQuotaViolation": {
+      "description": "Number of tables violating space quotas",
+      "value": 0
+   },
+   "numNamespaceInQuotaViolation": {
+      "description": "Number of namespaces violating space quotas",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_num_ops": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_min": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_max": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_mean": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_25th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_median": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_75th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_90th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_95th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_98th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_99th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "SnapshotObserverSizeComputationTime_99.9th_percentile": {
+      "description": "histogram for the time in millis to compute the size of each snapshot",
+      "value": 0
+   },
+   "numSpaceQuotas": {
+      "description": "Number of space quotas defined",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_num_ops": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_min": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_max": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_mean": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_25th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_median": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_75th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_90th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_95th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_98th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_99th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "QuotaObserverChoreTime_99.9th_percentile": {
+      "description": "histogram for the time in millis for the QuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_num_ops": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_min": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_max": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_mean": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_25th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_median": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_75th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_90th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_95th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_98th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_99th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "SnapshotQuotaObserverChoreTime_99.9th_percentile": {
+      "description": "histogram for the time in millis for the SnapshotQuotaObserverChore",
+      "value": 0
+   },
+   "numRegionSizeReports": {
+      "description": "Number of Region sizes reported",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_num_ops": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_min": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_max": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_mean": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_25th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_median": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_75th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_90th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_95th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_98th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_99th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   },
+   "SnapshotObserverSnapshotFetchTime_99.9th_percentile": {
+      "description": "histogram for the time in millis to fetch all snapshots from HBase",
+      "value": 0
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=Master,sub=Server",
+   "description": "Metrics about HBase master server",
+   "modelerType": "Master,sub=Server",
+   "tag.liveRegionServers": {
+      "description": "Names of live RegionServers",
+      "value": "https://cod-1vb4yv5tj6mt5-gateway0.cod-7216.xcu2-8y8x.dev.cldr.work:443/cod-1vb4yv5tj6mt5/cdp-proxy/hbase/webui/"
+   },
+   "tag.deadRegionServers": {
+      "description": "Names of dead RegionServers",
+      "value": "https://cod-1vb4yv5tj6mt5-gateway0.cod-7216.xcu2-8y8x.dev.cldr.work:443/cod-1vb4yv5tj6mt5/cdp-proxy/hbase/webui/"
+   },
+   "tag.drainingRegionServers": {
+      "description": "Names of draining RegionServers",
+      "value": "https://cod-1vb4yv5tj6mt5-gateway0.cod-7216.xcu2-8y8x.dev.cldr.work:443/cod-1vb4yv5tj6mt5/cdp-proxy/hbase/webui/"
+   },
+   "tag.zookeeperQuorum": {
+      "description": "ZooKeeper Quorum",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work:2181,cod-1vb4yv5tj6mt5-master1.cod-7216.xcu2-8y8x.dev.cldr.work:2181,cod-1vb4yv5tj6mt5-leader0.cod-7216.xcu2-8y8x.dev.cldr.work:2181"
+   },
+   "tag.serverName": {
+      "description": "Server Name",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work,16000,1668693434775"
+   },
+   "tag.clusterId": {
+      "description": "Cluster Id",
+      "value": "34f22047-dfc1-417d-b4f0-57894c1a3fbf"
+   },
+   "tag.isActiveMaster": {
+      "description": "Is Active Master",
+      "value": "false"
+   },
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "master"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "mergePlanCount": {
+      "description": "Number of Region Merge Plans executed",
+      "value": 0
+   },
+   "splitPlanCount": {
+      "description": "Number of Region Split Plans executed",
+      "value": 0
+   },
+   "masterActiveTime": {
+      "description": "Master Active Time",
+      "value": 0
+   },
+   "masterStartTime": {
+      "description": "Master Start Time",
+      "value": 1668693434775
+   },
+   "masterFinishedInitializationTime": {
+      "description": "Timestamp when Master has finished initializing",
+      "value": 0
+   },
+   "averageLoad": {
+      "description": "AverageLoad",
+      "value": 0.0
+   },
+   "numRegionServers": {
+      "description": "Number of RegionServers",
+      "value": 0
+   },
+   "numDeadRegionServers": {
+      "description": "Number of dead RegionServers",
+      "value": 0
+   },
+   "numDrainingRegionServers": {
+      "description": "Number of draining RegionServers",
+      "value": 0
+   },
+   "clusterRequests": 0,
+   "ServerCrashTime_num_ops": 0,
+   "ServerCrashTime_min": 0,
+   "ServerCrashTime_max": 0,
+   "ServerCrashTime_mean": 0,
+   "ServerCrashTime_25th_percentile": 0,
+   "ServerCrashTime_median": 0,
+   "ServerCrashTime_75th_percentile": 0,
+   "ServerCrashTime_90th_percentile": 0,
+   "ServerCrashTime_95th_percentile": 0,
+   "ServerCrashTime_98th_percentile": 0,
+   "ServerCrashTime_99th_percentile": 0,
+   "ServerCrashTime_99.9th_percentile": 0,
+   "ServerCrashSubmittedCount": 0,
+   "ServerCrashFailedCount": 0
+}, {
+   "name": "Hadoop:service=HBase,name=JvmMetrics",
+   "description": "JVM related metrics etc.",
+   "modelerType": "JvmMetrics",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "jvm"
+   },
+   "tag.ProcessName": {
+      "description": "Process name",
+      "value": "IO"
+   },
+   "tag.SessionId": {
+      "description": "Session ID",
+      "value": "https://cod-1vb4yv5tj6mt5-gateway0.cod-7216.xcu2-8y8x.dev.cldr.work:443/cod-1vb4yv5tj6mt5/cdp-proxy/hbase/webui/"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "MemNonHeapUsedM": {
+      "description": "Non-heap memory used in MB",
+      "value": 103.1662
+   },
+   "MemNonHeapCommittedM": {
+      "description": "Non-heap memory committed in MB",
+      "value": 105.24609
+   },
+   "MemNonHeapMaxM": {
+      "description": "Non-heap memory max in MB",
+      "value": -1.0
+   },
+   "MemHeapUsedM": {
+      "description": "Heap memory used in MB",
+      "value": 285.44193
+   },
+   "MemHeapCommittedM": {
+      "description": "Heap memory committed in MB",
+      "value": 4029.5
+   },
+   "MemHeapMaxM": {
+      "description": "Heap memory max in MB",
+      "value": 4029.5
+   },
+   "MemMaxM": {
+      "description": "Max memory size in MB",
+      "value": 4029.5
+   },
+   "GcCountParNew": {
+      "description": "GC Count for ParNew",
+      "value": 3
+   },
+   "GcTimeMillisParNew": {
+      "description": "GC Time for ParNew",
+      "value": 388
+   },
+   "GcCountConcurrentMarkSweep": {
+      "description": "GC Count for ConcurrentMarkSweep",
+      "value": 1
+   },
+   "GcTimeMillisConcurrentMarkSweep": {
+      "description": "GC Time for ConcurrentMarkSweep",
+      "value": 77
+   },
+   "GcCount": {
+      "description": "Total GC count",
+      "value": 4
+   },
+   "GcTimeMillis": {
+      "description": "Total GC time in milliseconds",
+      "value": 465
+   },
+   "ThreadsNew": {
+      "description": "Number of new threads",
+      "value": 0
+   },
+   "ThreadsRunnable": {
+      "description": "Number of runnable threads",
+      "value": 9
+   },
+   "ThreadsBlocked": {
+      "description": "Number of blocked threads",
+      "value": 0
+   },
+   "ThreadsWaiting": {
+      "description": "Number of waiting threads",
+      "value": 88
+   },
+   "ThreadsTimedWaiting": {
+      "description": "Number of timed waiting threads",
+      "value": 18
+   },
+   "ThreadsTerminated": {
+      "description": "Number of terminated threads",
+      "value": 0
+   },
+   "LogFatal": {
+      "description": "Total number of fatal log events",
+      "value": 0
+   },
+   "LogError": {
+      "description": "Total number of error log events",
+      "value": 0
+   },
+   "LogWarn": {
+      "description": "Total number of warning log events",
+      "value": 0
+   },
+   "LogInfo": {
+      "description": "Total number of info log events",
+      "value": 0
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=Master,sub=IPC",
+   "description": "Metrics about HBase Server IPC",
+   "modelerType": "Master,sub=IPC",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "master"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "queueSize": {
+      "description": "Number of bytes in the call queues; request has been read and parsed and is waiting to run or is currently being executed.",
+      "value": 0
+   },
+   "numCallsInGeneralQueue": {
+      "description": "Number of calls in the general call queue; parsed requests waiting in scheduler to be executed",
+      "value": 0
+   },
+   "numCallsInReplicationQueue": {
+      "description": "Number of calls in the replication call queue waiting to be run",
+      "value": 0
+   },
+   "numCallsInPriorityQueue": {
+      "description": "Number of calls in the priority call queue waiting to be run",
+      "value": 0
+   },
+   "numCallsInMetaPriorityQueue": {
+      "description": "Number of calls in the priority call queue waiting to be run",
+      "value": 0
+   },
+   "numOpenConnections": {
+      "description": "Number of open connections.",
+      "value": 0
+   },
+   "numActiveHandler": {
+      "description": "Total number of active rpc handlers.",
+      "value": 0
+   },
+   "numActiveGeneralHandler": {
+      "description": "Number of active general rpc handlers.",
+      "value": 0
+   },
+   "numActivePriorityHandler": {
+      "description": "Number of active priority rpc handlers.",
+      "value": 0
+   },
+   "numActiveReplicationHandler": {
+      "description": "Number of active replication rpc handlers.",
+      "value": 0
+   },
+   "numGeneralCallsDropped": {
+      "description": "Total number of calls in general queue which were dropped by CoDel RPC executor",
+      "value": 0
+   },
+   "numLifoModeSwitches": {
+      "description": "Total number of calls in general queue which were served from the tail of the queue",
+      "value": 0
+   },
+   "numCallsInWriteQueue": {
+      "description": "Number of calls in the write call queue; parsed requests waiting in scheduler to be executed",
+      "value": 0
+   },
+   "numCallsInReadQueue": {
+      "description": "Number of calls in the read call queue; parsed requests waiting in scheduler to be executed",
+      "value": 0
+   },
+   "numCallsInScanQueue": {
+      "description": "Number of calls in the scan call queue; parsed requests waiting in scheduler to be executed",
+      "value": 0
+   },
+   "numActiveWriteHandler": {
+      "description": "Number of active write rpc handlers.",
+      "value": 0
+   },
+   "numActiveReadHandler": {
+      "description": "Number of active read rpc handlers.",
+      "value": 0
+   },
+   "numActiveScanHandler": {
+      "description": "Number of active scan rpc handlers.",
+      "value": 0
+   },
+   "nettyDirectMemoryUsage": {
+      "description": "Current Netty direct memory usage.",
+      "value": 16777216
+   },
+   "receivedBytes": {
+      "description": "Number of bytes received.",
+      "value": 443
+   },
+   "exceptions.RegionMovedException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "authenticationSuccesses": {
+      "description": "Number of authentication successes.",
+      "value": 1
+   },
+   "authorizationFailures": {
+      "description": "Number of authorization failures.",
+      "value": 0
+   },
+   "exceptions.requestTooBig": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions.OutOfOrderScannerNextException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions.rpcThrottling": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions.otherExceptions": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 1
+   },
+   "ProcessCallTime_num_ops": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_min": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_max": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_mean": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_25th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_median": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_75th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_90th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_95th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_98th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_99th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "ProcessCallTime_99.9th_percentile": {
+      "description": "processing call time.",
+      "value": 0
+   },
+   "exceptions.callQueueTooBig": {
+      "description": "Call queue is full",
+      "value": 0
+   },
+   "QueueCallTime_num_ops": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_min": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_max": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_mean": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_25th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_median": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_75th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_90th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_95th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_98th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_99th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "QueueCallTime_99.9th_percentile": {
+      "description": "queue Call Time.",
+      "value": 0
+   },
+   "authenticationFailures": {
+      "description": "Number of authentication failures.",
+      "value": 0
+   },
+   "exceptions.multiResponseTooLarge": {
+      "description": "A response to a multi request was too large and the rest of the requests will have to be retried.",
+      "value": 0
+   },
+   "TotalCallTime_num_ops": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_min": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_max": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_mean": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_25th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_median": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_75th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_90th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_95th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_98th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_99th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "TotalCallTime_99.9th_percentile": {
+      "description": "total call time, including both queued and processing time.",
+      "value": 0
+   },
+   "exceptions.RegionTooBusyException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions.FailedSanityCheckException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "ResponseSize_num_ops": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_min": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_max": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_mean": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_25th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_median": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_75th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_90th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_95th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_98th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_99th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "ResponseSize_99.9th_percentile": {
+      "description": "response size in bytes.",
+      "value": 0
+   },
+   "exceptions.UnknownScannerException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions": {
+      "description": "Exceptions caused by requests",
+      "value": 1
+   },
+   "authenticationFallbacks": {
+      "description": "Number of fallbacks to insecure authentication.",
+      "value": 0
+   },
+   "exceptions.quotaExceeded": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "exceptions.NotServingRegionException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "authorizationSuccesses": {
+      "description": "Number of authorization successes.",
+      "value": 1
+   },
+   "exceptions.ScannerResetException": {
+      "description": "Number of requests that resulted in the specified type of Exception",
+      "value": 0
+   },
+   "RequestSize_num_ops": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_min": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_max": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_mean": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_25th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_median": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_75th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_90th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_95th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_98th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_99th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "RequestSize_99.9th_percentile": {
+      "description": "request size in bytes.",
+      "value": 0
+   },
+   "sentBytes": {
+      "description": "Number of bytes sent.",
+      "value": 751
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=UgiMetrics",
+   "description": "User and group related metrics",
+   "modelerType": "UgiMetrics",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "ugi"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "LoginSuccessNumOps": {
+      "description": "Number of ops for rate of successful kerberos logins and latency (milliseconds)",
+      "value": 1
+   },
+   "LoginSuccessAvgTime": {
+      "description": "Average time for rate of successful kerberos logins and latency (milliseconds)",
+      "value": 115.0
+   },
+   "LoginFailureNumOps": {
+      "description": "Number of ops for rate of failed kerberos logins and latency (milliseconds)",
+      "value": 0
+   },
+   "LoginFailureAvgTime": {
+      "description": "Average time for rate of failed kerberos logins and latency (milliseconds)",
+      "value": 0.0
+   },
+   "GetGroupsNumOps": {
+      "description": "Number of ops for getGroups",
+      "value": 1
+   },
+   "GetGroupsAvgTime": {
+      "description": "Average time for getGroups",
+      "value": 12.0
+   },
+   "RenewalFailuresTotal": {
+      "description": "Renewal failures since startup",
+      "value": 0
+   },
+   "RenewalFailures": {
+      "description": "Renewal failures since last successful login",
+      "value": 0
+   }
+}, {
+   "name": "Hadoop:service=HBase,name=Master,sub=Procedure",
+   "description": "Metrics about HBase master procedure",
+   "modelerType": "Master,sub=Procedure",
+   "tag.Context": {
+      "description": "Metrics context",
+      "value": "master"
+   },
+   "tag.Hostname": {
+      "description": "Local hostname",
+      "value": "cod-1vb4yv5tj6mt5-master0.cod-7216.xcu2-8y8x.dev.cldr.work"
+   },
+   "numMasterWALs": {
+      "description": "Number of master WAL files",
+      "value": 0
+   }
+}]

@@ -11,12 +11,14 @@
     dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}
     mode: 0755
     owner: hbase
+    group: hbase
 - name: Copy Configuration file
   copy:
     src: applicationinsights.json
     dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}
-    mode: 755
+    mode: 0755
     owner: hbase
+    group: hbase
 - name: Replace ROLENANME in config file
   replace:
     path: /var/lib/hbase/appinsights/{{ROLE_NAME}}/applicationinsights.json
