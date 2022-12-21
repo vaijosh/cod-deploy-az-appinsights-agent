@@ -6,9 +6,9 @@ Ansible : Download and Setup Ansible as per instructions from https://docs.ansib
 ssh access to all Hbase hosts
 
 ## How to setup up application insights agent
-1. Create an Application Insights Workspace and note down the conncetions
-2. Modify applicationinsights.json and copy "Connection String" recorded in step 2. Also in jmxMetrics section include the JMX metrics you want to monitor.
-3. Modify the hosts file and add the hosts grouped by role names e.g. [master], [regionserver].<br />( Note: The same group name will appear as role name in metric and hostname will be used role instance )
+1. Create an Application Insights Workspace and note down the connections
+2. Modify files applicationinsights_<rolename>.json and copy "Connection String" recorded in step 2. Also in jmxMetrics section include the JMX metrics you want to monitor for the role.
+3. Modify the hosts file and add the hosts under group named after rolename e.g. [master], [regionserver].<br />( Note: The same group name will appear as role name in metric and hostname will be used role instance )
 4. Run the ansible script using command
 
     ```export ANSIBLE_HOST_KEY_CHECKING=False```
@@ -33,7 +33,7 @@ ssh access to all Hbase hosts
 4. add followng query to filter metrics
     ```
       customMetrics
-        | where cloud_RoleInstance == "<role instance>" and name == '<metric name>'
+        | where cloud_RoleInstance == "<role instance>"'
     ```
 5. In preview panel you can see the search results for the query. Once the results are validated, click "Continue Editing Alert"
 6. Set appropraite configurations for "Measurement", "Alert logic"
