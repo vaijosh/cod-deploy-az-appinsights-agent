@@ -13,7 +13,7 @@ ssh access to all Hbase hosts
 
     ```export ANSIBLE_HOST_KEY_CHECKING=False```
     
-    ```ansible -i hosts -u cloudbreak --private-key ~/.ssh/odx-developers playbook.yml```
+    ```ansible-playbook -i hosts -u cloudbreak --private-key ~/.ssh/odx-developers playbook.yml```
 5. The applicationinsights jar file and config file will be deployed in /var/lib/hbase/appinsights/<rolename> directory.
 6. From Cloudera Manager, got to Configurations for Hbase and search "java_opts", and for each role you want to monitor add the following jvm argument
 
