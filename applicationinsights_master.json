@@ -1,0 +1,419 @@
+{
+  "role": {
+    "name": "ROLENAME",
+    "instance": "HOSTNAME"
+  },
+  "connectionString": "<connection String from azure application insights overview page>",
+  "instrumentation": {
+    "azureSdk": {
+      "enabled": false
+    },
+    "cassandra": {
+      "enabled": false
+    },
+    "jdbc": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
+    "kafka": {
+      "enabled": false
+    },
+    "micrometer": {
+      "enabled": false
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "quartz": {
+      "enabled": false
+    },
+    "rabbitmq": {
+      "enabled": false
+    },
+    "redis": {
+      "enabled": false
+    },
+    "springScheduling": {
+      "enabled": false
+    }
+  },
+  "jmxMetrics": [ {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "numRegionServers",
+    "name": "Number of RegionServers"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "numDeadRegionServers",
+    "name": "Number of dead RegionServers"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "numDrainingRegionServers",
+    "name": "Number of draining RegionServers"
+  },{
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "mergePlanCount",
+    "name": "Number of Region Merge Plans executed"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "splitPlanCount",
+    "name": "Number of Region Split Plans executed"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "masterActiveTime",
+    "name": "Master Active Time"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "masterStartTime",
+    "name": "Master Start Time"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "masterFinishedInitializationTime",
+    "name": "Timestamp when Master has finished initializing"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Server",
+    "attribute": "averageLoad",
+    "name": "AverageLoad"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapUsedM",
+    "name": "Non-heap memory used in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapCommittedM",
+    "name": "Non-heap memory committed in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapMaxM",
+    "name": "Non-heap memory max in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapUsedM",
+    "name": "Heap memory used in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapCommittedM",
+    "name": "Heap memory committed in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapMaxM",
+    "name": "Heap memory max in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemMaxM",
+    "name": "Max memory size in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcCountParNew",
+    "name": "GC Count for ParNew"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcTimeMillisParNew",
+    "name": "GC Time for ParNew"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcCountConcurrentMarkSweep",
+    "name": "GC Count for ConcurrentMarkSweep"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcTimeMillisConcurrentMarkSweep",
+    "name": "GC Time for ConcurrentMarkSweep"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcCount",
+    "name": "Total GC count"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcTimeMillis",
+    "name": "Total GC time in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsNew",
+    "name": "Number of new threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsRunnable",
+    "name": "Number of runnable threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsBlocked",
+    "name": "Number of blocked threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsWaiting",
+    "name": "Number of waiting threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsTimedWaiting",
+    "name": "Number of timed waiting threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsTerminated",
+    "name": "Number of terminated threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogFatal",
+    "name": "Total number of fatal log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogError",
+    "name": "Total number of error log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogWarn",
+    "name": "Total number of warning log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogInfo",
+    "name": "Total number of info log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInReplicationQueue",
+    "name": "Number of calls in the replication call queue waiting to be run"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInPriorityQueue",
+    "name": "Number of calls in the priority call queue waiting to be run"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInMetaPriorityQueue",
+    "name": "Number of calls in the priority call queue waiting to be run"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numOpenConnections",
+    "name": "Number of open connections."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveHandler",
+    "name": "Total number of active rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveGeneralHandler",
+    "name": "Number of active general rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActivePriorityHandler",
+    "name": "Number of active priority rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveReplicationHandler",
+    "name": "Number of active replication rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numGeneralCallsDropped",
+    "name": "Total number of calls dropped in general queue"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numLifoModeSwitches",
+    "name": "Total number of calls in general queue"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInWriteQueue",
+    "name": "Number of calls in the write call queue"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInReadQueue",
+    "name": "Number of calls in the read call queue"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numCallsInScanQueue",
+    "name": "Number of calls in the scan call"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveWriteHandler",
+    "name": "Number of active write rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveReadHandler",
+    "name": "Number of active read rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "numActiveScanHandler",
+    "name": "Number of active scan rpc handlers."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "nettyDirectMemoryUsage",
+    "name": "Current Netty direct memory usage."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "receivedBytes",
+    "name": "Number of bytes received."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "authenticationSuccesses",
+    "name": "Number of authentication successes."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "authorizationFailures",
+    "name": "Number of authorization failures."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_num_ops",
+    "name": "processing call time num ops."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_min",
+    "name": "processing call time min."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_max",
+    "name": "processing call time max."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_mean",
+    "name": "processing call time mean."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_median",
+    "name": "processing call time median."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_75th_percentile",
+    "name": "processing call time 75th_percentile."
+  },  {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ProcessCallTime_95th_percentile",
+    "name": "processing call time 95th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_num_ops",
+    "name": "queue Call Time num ops."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_min",
+    "name": "queue Call Time min."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_max",
+    "name": "queue Call Time max."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_mean",
+    "name": "queue Call Time mean."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_median",
+    "name": "queue Call Time median."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_75th_percentile",
+    "name": "queue Call Time 75th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "QueueCallTime_95th_percentile",
+    "name": "queue Call Time 95th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "authenticationFailures",
+    "name": "Number of authentication failures."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_num_ops",
+    "name": "total call time num ops."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_min",
+    "name": "total call time min."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_max",
+    "name": "total call time max."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_mean",
+    "name": "total call time mean"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_median",
+    "name": "total call time median."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_75th_percentile",
+    "name": "total call time time 75th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "TotalCallTime_95th_percentile",
+    "name": "total call time  95th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_num_ops",
+    "name": "response size in bytes num ops."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_min",
+    "name": "response size in bytes min."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_max",
+    "name": "response size in bytes max."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_mean",
+    "name": "response size in bytes mean."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_median",
+    "name": "response size in bytes median."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_75th_percentile",
+    "name": "response size in byte 75th_percentiles."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_95th_percentile",
+    "name": "response size in bytes 95th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "ResponseSize_99th_percentile",
+    "name": "response size in bytes 99th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "authenticationFallbacks",
+    "name": "Number of fallbacks to insecure authentication."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "authorizationSuccesses",
+    "name": "Number of authorization successes."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_num_ops",
+    "name": "request size in bytes num_ops."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_min",
+    "name": "request size in bytes _min."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_max",
+    "name": "request size in bytes _max."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_mean",
+    "name": "request size in bytes _mean."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_median",
+    "name": "request size in bytes median."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_75th_percentile",
+    "name": "request size in bytes 75th_percentile."
+  },  {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_95th_percentile",
+    "name": "request size in bytes 95th_percentile."
+  },  {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "RequestSize_99th_percentile",
+    "name": "request size in bytes 99th_percentile."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=IPC",
+    "attribute": "sentBytes",
+    "name": "Number of bytes sent."
+  }, {
+    "objectName": "Hadoop:service=HBase,name=Master,sub=Procedure",
+    "attribute": "numMasterWALs",
+    "name": "Number of master WAL files"
+  }]
+}

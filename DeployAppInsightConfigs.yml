@@ -14,8 +14,8 @@
     group: hbase
 - name: Copy Configuration file
   copy:
-    src: applicationinsights.json
-    dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}
+    src: applicationinsights_{{ROLE_NAME}}.json
+    dest: /var/lib/hbase/appinsights/{{ROLE_NAME}}/applicationinsights.json
     mode: 0755
     owner: hbase
     group: hbase

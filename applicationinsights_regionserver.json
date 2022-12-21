@@ -1,0 +1,215 @@
+{
+  "role": {
+    "name": "ROLENAME",
+    "instance": "HOSTNAME"
+  },
+  "connectionString": "<connection String from azure application insights overview page>",
+  "instrumentation": {
+    "azureSdk": {
+      "enabled": false
+    },
+    "cassandra": {
+      "enabled": false
+    },
+    "jdbc": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
+    "kafka": {
+      "enabled": false
+    },
+    "micrometer": {
+      "enabled": false
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "quartz": {
+      "enabled": false
+    },
+    "rabbitmq": {
+      "enabled": false
+    },
+    "redis": {
+      "enabled": false
+    },
+    "springScheduling": {
+      "enabled": false
+    }
+  },
+  "jmxMetrics": [{
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_num_ops",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_min",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_max",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_mean",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_median",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_75th_percentile",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_95th_percentile",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  },  {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsPReadTime_99th_percentile",
+    "name": "latency of HFile~s positional reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_num_ops",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_min",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_max",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_mean",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_median",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_75th_percentile",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_95th_percentile",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsWriteTime_99th_percentile",
+    "name": "latency of HFile~s writes on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_num_ops",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_min",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_max",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_mean",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_median",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_75th_percentile",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_95th_percentile",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=RegionServer,sub=IO",
+    "attribute": "FsReadTime_99th_percentile",
+    "name": "latency of HFile~s sequential reads on this region server in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapUsedM",
+    "name": "Non-heap memory used in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapCommittedM",
+    "name": "Non-heap memory committed in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemNonHeapMaxM",
+    "name": "Non-heap memory max in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapUsedM",
+    "name": "Heap memory used in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapCommittedM",
+    "name": "Heap memory committed in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemHeapMaxM",
+    "name": "Heap memory max in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "MemMaxM",
+    "name": "Max memory size in MB"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcCount",
+    "name": "Total GC count"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "GcTimeMillis",
+    "name": "Total GC time in milliseconds"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsNew",
+    "name": "Number of new threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsRunnable",
+    "name": "Number of runnable threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsBlocked",
+    "name": "Number of blocked threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsWaiting",
+    "name": "Number of waiting threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsTimedWaiting",
+    "name": "Number of timed waiting threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "ThreadsTerminated",
+    "name": "Number of terminated threads"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogFatal",
+    "name": "Total number of fatal log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogError",
+    "name": "Total number of error log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogWarn",
+    "name": "Total number of warning log events"
+  }, {
+    "objectName": "Hadoop:service=HBase,name=JvmMetrics",
+    "attribute": "LogInfo",
+    "name": "Total number of info log events"
+  }]
+}
