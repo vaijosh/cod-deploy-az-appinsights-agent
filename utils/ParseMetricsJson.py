@@ -1,6 +1,6 @@
 import json
 
-f = open("HbaseMetrics.json")
+f = open("utils/HbaseMetrics.json")
 
 inputJson = json.load(f)
 
