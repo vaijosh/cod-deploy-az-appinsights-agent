@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+CONNECTION_STRING="InstrumentationKey=82690d2f-029d-415b-85cf-fe1ccd9301f2;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://westus2.livediagnostics.monitor.azure.com/"
+mkdir -p /var/lib/hbase
+mkdir -p /var/lib/hbase/appinsights
+HOSTNAME=$(hostname -f)
+
+configure(){
+	role=$1
+	HOSTNAME=$2
+	CONNECTION_STRING=$3
+
+  echo "Arguments are role:$role, HOSTNAME=$HOSTNAME, CONNECTION_STRING=$CONNECTION_STRING"
+
+  #Create required directories
+	mkdir -p /var/lib/hbase/appinsights
+	mkdir -p /var/lib/hbase/appinsights/$role
+	pushd /var/lib/hbase/appinsights/$role || return
+
+  #Download application insights agent jar
+	curl -H 'Accept: application/vnd.github.v3.raw' -O -L https://repo1.maven.org/maven2/com/microsoft/azure/applicationinsights-agent/3.4.4/applicationinsights-agent-3.4.4.jar
+
+	#Download applicationinsights json for the role.
+	curl -o applicationinsights.json -L https://raw.githubusercontent.com/vaijosh/cod-deploy-az-appinsights-agent/main/applicationinsights_$role.json
+
+	#Replace the placeholders in applicationinsights.json
+	sed -i -e "s/HOSTNAME/${HOSTNAME}/g" applicationinsights.json
+	sed -i -e "s/ROLENAME/${role}/g" applicationinsights.json
+	sed -i -e 's^<connection String from azure application insights overview page>^'"${CONNECTION_STRING}"'^g' applicationinsights.json
+}
+
+configure master $HOSTNAME $CONNECTION_STRING
+configure regionserver $HOSTNAME $CONNECTION_STRING
+
+chmod -R 755 /var/lib/hbase/appinsights
