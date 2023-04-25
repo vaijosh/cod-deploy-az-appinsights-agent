@@ -28,7 +28,7 @@ configure(){
 	sed -i -e 's^<connection String from azure application insights overview page>^'"${CONNECTION_STRING}"'^g' applicationinsights.json
 }
 
-configure master $HOSTNAME $CONNECTION_STRING
+#configure master $HOSTNAME $CONNECTION_STRING
 configure regionserver $HOSTNAME $CONNECTION_STRING
 
 chmod -R 755 /var/lib/hbase/appinsights
